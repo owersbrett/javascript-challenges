@@ -17,7 +17,7 @@
 // structure to speed up queries.
 
 let theString = 'de';
-let possibleStrings = ['dog', 'deer', 'deal', 'destroy', "detonate"];
+let possibleStrings = ['dog', 'deer', 'deal', 'dastroy', "detonate"];
 
 
 function autocompleteString(str, posArr){

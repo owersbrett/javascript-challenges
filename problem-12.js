@@ -19,7 +19,7 @@
 // For example, if X = {1, 3, 5}, you could climb 1, 3, or 5 steps at a time.
 
 let possibleSteps = [1, 2];
-let numberOfSteps = 5;
+let numberOfSteps = 10;
 
 // 1 is 1, 2 is 2, 3 is 3, 4 is 5
 //[1] | [1,1],[2] | [1,1,1],[2,1],[1,2] | [1,1,1,1], [1,1,2], [1,2,1], [2,2], [2,1,1] 
@@ -32,9 +32,9 @@ function climbStairs(n){
     countArray[2] = 2;
     for(let i = 3; i <= n; i++){
         countArray[i] = countArray[i - 1] + countArray[i - 2];
+        console.log(countArray[i]);
     }
 
-    return countArray[n];
 }
 
 // i went on youtube to find out how to do this recursively, but what I learned is that 
