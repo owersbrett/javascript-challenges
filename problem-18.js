@@ -29,8 +29,8 @@ let myK = 3;
 
 function maxValue(arr, k){
     for (let i = 0; i < k; i++){
-        
+        console.log(arr[i]);
     }
 }
 
-maxValue(maxValue, myK);
+maxValue(myArr, myK);
